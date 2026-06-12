@@ -80,6 +80,13 @@ const App = () => {
   const [language, setLanguage] = useState('id');
   const t = translations[language];
 
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  useEffect(() => {
+    document.body.style.overflow = menuOpen ? 'hidden' : '';
+    return () => { document.body.style.overflow = ''; };
+  }, [menuOpen]);
+
   const services = [
     {
       icon: '📑',
@@ -114,13 +121,53 @@ const App = () => {
             <a href="#projects">{t.nav.projects}</a>
             <a href="#contact">{t.nav.contact}</a>
           </nav>
-          <div className="language-switcher">
+
+          <button
+            className={`hamburger ${menuOpen ? 'open' : ''}`}
+            aria-label="Open menu"
+            aria-expanded={menuOpen}
+            onClick={() => setMenuOpen(v => !v)}
+          >
+              <span />
+              <span />
+              <span />
+          </button>
+
+          <div className="language-switcher desktop-only">
             <button
               onClick={() => setLanguage(language === 'en' ? 'id' : 'en')}
             >
               {language === 'en' ? 'ID' : 'EN'}
             </button>
           </div>
+
+          <div
+            className={`side-overlay ${menuOpen ? 'visible' : ''}`}
+            onClick={() => setMenuOpen(false)}
+          />
+          <aside className={`side-menu ${menuOpen ? 'open' : ''}`} role="dialog" aria-modal="true">
+            <button className="close-btn" aria-label="Close menu" onClick={() => setMenuOpen(false)}>×</button>
+            <nav className="side-nav">
+              <a href="#hero" onClick={() => setMenuOpen(false)}>{t.nav.home}</a>
+              <a href="#services" onClick={() => setMenuOpen(false)}>{t.nav.services}</a>
+              <a href="#projects" onClick={() => setMenuOpen(false)}>{t.nav.projects}</a>
+              <a href="#contact" onClick={() => setMenuOpen(false)}>{t.nav.contact}</a>
+            </nav>
+            <div className="side-language">
+              <button
+                className={language === 'en' ? 'active' : ''}
+                onClick={() => setLanguage('en')}
+              >
+                EN
+              </button>
+              <button
+                className={language === 'id' ? 'active' : ''}
+                onClick={() => setLanguage('id')}
+              >
+                ID
+              </button>
+            </div>
+          </aside>
         </div>
       </header>
 
