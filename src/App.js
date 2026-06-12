@@ -143,12 +143,14 @@ const App = () => {
           <p className="hero-subtitle">
             {t.hero.subtitle}
           </p>
-          <a href="#services" className="btn-primary">
-            {t.hero.btn1}
-          </a>
-          <a href="#contact" className="btn-primary" style={{marginLeft: '1rem'}}>
-            {t.hero.btn2}
-          </a>
+          <div className="hero-buttons">
+            <a href="#services" className="btn-primary">
+              {t.hero.btn1}
+            </a>
+            <a href="#contact" className="btn-primary">
+              {t.hero.btn2}
+            </a>
+          </div>
         </div>
       </AnimatedSection>
 
@@ -236,7 +238,7 @@ const App = () => {
 
       <footer className="footer">
         <div className="container">
-          <p>© {new Date().getFullYear()} KaryaDigital. {t.footer}</p>
+          <p>© {new Date().getFullYear()} Skripsiin. {t.footer}</p>
         </div>
       </footer>
     </div>

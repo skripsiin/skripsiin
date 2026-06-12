@@ -8,8 +8,8 @@ Need web/app? or even just need help with the front-end of your web/app? contact
 
 ### Contact
 
-[WhatsApp](https://wa.me/6289698738839)\
+[WhatsApp](https://wa.me/6289698738839)
 
-[Email](mailto:cs.skripsiin@gmail.com)\
+[Email](mailto:cs.skripsiin@gmail.com)
 
 [Instagram](https://instagram.com/skripsiin.git)
