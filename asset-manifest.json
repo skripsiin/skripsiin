@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/skripsiin/static/css/main.96eb2a97.css",
+    "main.js": "/skripsiin/static/js/main.e62207a1.js",
+    "static/js/453.69308bcd.chunk.js": "/skripsiin/static/js/453.69308bcd.chunk.js",
+    "static/media/Skripsiin Logo with name Transparent BG.png": "/skripsiin/static/media/Skripsiin Logo with name Transparent BG.f7d0b608dbd19d0c97e7.png",
+    "static/media/skripsiin text transparent BG.png": "/skripsiin/static/media/skripsiin text transparent BG.dbaa1ea9626846a25731.png",
+    "static/media/ig.png": "/skripsiin/static/media/ig.11ccdae18a3eafb42005.png",
+    "static/media/wa.png": "/skripsiin/static/media/wa.7d1c570c88da7c4c3baa.png",
+    "static/media/mail.png": "/skripsiin/static/media/mail.f63e314696a068b00d5b.png",
+    "index.html": "/skripsiin/index.html",
+    "main.96eb2a97.css.map": "/skripsiin/static/css/main.96eb2a97.css.map",
+    "main.e62207a1.js.map": "/skripsiin/static/js/main.e62207a1.js.map",
+    "453.69308bcd.chunk.js.map": "/skripsiin/static/js/453.69308bcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.96eb2a97.css",
+    "static/js/main.e62207a1.js"
+  ]
+}
