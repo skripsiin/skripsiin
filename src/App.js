@@ -6,6 +6,7 @@ import wa from './assets/wa.png'
 import mail from './assets/mail.png'
 import ig from './assets/ig.png'
 import { translations } from './i18n';
+import portfolioTemplate from './assets/Project/portfolio-template.png';
 
 const useOnScreen = (ref, rootMargin = '0px') => {
   const [isIntersecting, setIntersecting] = useState(false);
@@ -40,38 +41,38 @@ const AnimatedSection = ({ children, className = '', id }) => {
 const projects = [
   {
     id: 1,
-    title: 'E‑Commerce Website',
-    image: 'https://picsum.photos/400/250?random=1',
-    link: '#',
+    title: 'Portfolio Template',
+    image: portfolioTemplate,
+    link: 'https://skripsiin.github.io/portfolio-template',
   },
   {
     id: 2,
-    title: 'Portfolio Site',
-    image: 'https://picsum.photos/400/250?random=2',
+    title: 'Comming Soon',
+    image: null,
     link: '#',
   },
   {
     id: 3,
-    title: 'Company Profile',
-    image: 'https://picsum.photos/400/250?random=3',
+    title: 'Coming Soon',
+    image: null,
     link: '#',
   },
   {
     id: 4,
-    title: 'Landing Page',
-    image: 'https://picsum.photos/400/250?random=4',
+    title: 'Coming Soon',
+    image: null,
     link: '#',
   },
   {
     id: 5,
-    title: 'Dashboard UI',
-    image: 'https://picsum.photos/400/250?random=5',
+    title: 'Coming Soon',
+    image: null,
     link: '#',
   },
   {
     id: 6,
-    title: 'Blog Platform',
-    image: 'https://picsum.photos/400/250?random=6',
+    title: 'Coming Soon',
+    image: null,
     link: '#',
   },
 ]
@@ -230,12 +231,13 @@ const App = () => {
           <div className="projects-grid">
             {projects.map((proj) => (
               <div className="project-card" key={proj.id}>
-                <img
+                {proj.image ? <img
                   src={proj.image}
                   alt={proj.title}
                   className="project-image"
                   loading="lazy"
                 />
+                : <div className="coming-soon-placeholder">Coming Soon</div>}
                 <div className="project-overlay">
                   <h3 className="project-title">{proj.title}</h3>
                   <a
