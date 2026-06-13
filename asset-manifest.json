@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/skripsiin/static/css/main.5f817732.css",
-    "main.js": "/skripsiin/static/js/main.068b84e6.js",
+    "main.css": "/skripsiin/static/css/main.f28d557a.css",
+    "main.js": "/skripsiin/static/js/main.b9c5cb7a.js",
     "static/js/453.69308bcd.chunk.js": "/skripsiin/static/js/453.69308bcd.chunk.js",
+    "static/media/portfolio-template.png": "/skripsiin/static/media/portfolio-template.c387e6e8f8967d99274c.png",
     "static/media/Skripsiin Logo with name Transparent BG.png": "/skripsiin/static/media/Skripsiin Logo with name Transparent BG.f7d0b608dbd19d0c97e7.png",
     "static/media/skripsiin text transparent BG.png": "/skripsiin/static/media/skripsiin text transparent BG.dbaa1ea9626846a25731.png",
     "static/media/ig.png": "/skripsiin/static/media/ig.11ccdae18a3eafb42005.png",
     "static/media/wa.png": "/skripsiin/static/media/wa.7d1c570c88da7c4c3baa.png",
     "static/media/mail.png": "/skripsiin/static/media/mail.f63e314696a068b00d5b.png",
     "index.html": "/skripsiin/index.html",
-    "main.5f817732.css.map": "/skripsiin/static/css/main.5f817732.css.map",
-    "main.068b84e6.js.map": "/skripsiin/static/js/main.068b84e6.js.map",
+    "main.f28d557a.css.map": "/skripsiin/static/css/main.f28d557a.css.map",
+    "main.b9c5cb7a.js.map": "/skripsiin/static/js/main.b9c5cb7a.js.map",
     "453.69308bcd.chunk.js.map": "/skripsiin/static/js/453.69308bcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5f817732.css",
-    "static/js/main.068b84e6.js"
+    "static/css/main.f28d557a.css",
+    "static/js/main.b9c5cb7a.js"
   ]
 }
